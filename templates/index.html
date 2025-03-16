@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{name}'s Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+        <div class="name-bio">
+          <h1>{name}</h1>
+          <p>{bio}</p>
+        </div>
+        <button id="theme-toggle" aria-label="Toggle Theme">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+              <path d="M12 1a9 9 0 100 18 9 9 0 000-18zm0 16.5A7.5 7.5 0 1119.5 12 7.51 7.51 0 0112 17.5z" />
+            </svg>
+        </button>
+    </header>
+      
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:{contact_email}">{contact_email}</a></p>
+      <p>GitHub: <a href="{github_link}" target="_blank">{github_link}</a></p>
+      <p>LinkedIn: <a href="{linkedin_link}" target="_blank">{linkedin_link}</a></p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        {projects}
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© {name} - Portfolio created by PageCraft</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {{
+        document.body.classList.toggle('light');
+    }});
+  </script>
+  
+</body>
+</html>

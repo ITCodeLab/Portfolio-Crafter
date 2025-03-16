@@ -1,0 +1,127 @@
+:root {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --secondary-text: #b3b3b3;
+    --button-bg: #1f1f1f;
+    --button-text: #ffffff;
+  }
+  
+  body.light {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --secondary-text: #555555;
+    --button-bg: #f0f0f0;
+    --button-text: #000000;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .container {
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .name-bio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Optional: Adjust spacing between the columns */
+  }
+  
+  .name-bio h1 {
+    flex: 1; /* Make the name column flexible */
+    text-align: left; /* Align the name to the left */
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .name-bio p {
+    flex: 2; /* Make the bio column take up more space */
+    font-size: 1rem;
+    color: var(--secondary-text);
+    text-align: right; /* Align the bio to the right */
+    margin: 0;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+  }
+  
+  header p {
+    font-size: 1rem;
+    color: var(--secondary-text);
+  }
+  
+  header button {
+    margin-top: 15px;
+  }
+  
+  .contact h2, .projects h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact p, .projects ul {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .projects ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .projects ul li {
+    margin-bottom: 10px;
+  }
+  
+  .projects ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .projects ul li a:hover {
+    text-decoration: underline;
+    color: #53901b; /* Optional: Highlight color on hover */
+  }
+  #theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem; /* Adjust size for Font Awesome icon */
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  #theme-toggle:hover {
+    transform: scale(1.2); /* Slight enlargement on hover */
+  }
+  
+  #theme-toggle svg {
+    width: 1.5rem; /* Adjust size for SVG icon */
+    height: 1.5rem;
+  }
+  
+  
+  footer {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--secondary-text);
+    margin-top: 40px;
+  }
+  
